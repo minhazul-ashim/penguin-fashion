@@ -1,0 +1,38 @@
+// Font Import
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
+// Variables
+
+$primaryText : #FA804C;
+$secondaryText : #363958;
+$btnColor : #3746C8;
+$bannerColors : #FFF9F4;
+
+
+// Functions
+
+@function textColor ($color) {
+
+    @if (lightness($color) > 70) {
+        @return $secondaryText;
+    }
+    @else {
+        @return #ffffff;
+    }
+}
+
+
+// Mixins
+
+@mixin btns {
+
+                background: $btnColor;
+                color: textColor($btnColor);
+                transition: 0.2s;
+
+                &:hover {
+
+            background: darken($btnColor, 20%);
+}
+}

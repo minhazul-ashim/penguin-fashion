@@ -1,0 +1,86 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap");
+section {
+  margin: 5% 0;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+}
+
+.section-title::after {
+  content: '';
+  width: 20%;
+  background: #FA804C;
+  height: 5px;
+  display: block;
+  position: absolute;
+  left: 40%;
+  margin-top: 5px;
+  border-radius: 20px;
+}
+
+header {
+  background-color: #FFF9F4;
+}
+
+header .top-banner .banner-info h1 {
+  color: #363958;
+}
+
+header .top-banner .banner-info span {
+  color: #FA804C;
+}
+
+header .top-banner .banner-info .banner-btn {
+  background: #3746C8;
+  color: #ffffff;
+  transition: 0.2s;
+}
+
+header .top-banner .banner-info .banner-btn:hover {
+  background: #212a78;
+}
+
+.casual-shoes-container .shoe-box .shoe-img {
+  background: rgba(153, 153, 153, 0.096);
+}
+
+.casual-shoes-container .shoe-box .shoe-details h1 {
+  color: #FA804C;
+}
+
+.casual-shoes-container .shoe-box .shoe-details button {
+  background: #3746C8;
+  color: #ffffff;
+  transition: 0.2s;
+}
+
+.casual-shoes-container .shoe-box .shoe-details button:hover {
+  background: #212a78;
+}
+
+.forms-container input[type='submit'] {
+  transition: all 0.5s;
+}
+
+.forms-container input[type='submit']:hover {
+  background: rgba(3, 230, 3, 0.548);
+}
+
+@media (max-width: 688px) {
+  html {
+    font-size: 60%;
+  }
+}
+
+@media (min-width: 689px) and (max-width: 991px) {
+  html {
+    font-size: 70%;
+  }
+}
+
+@media (min-width: 991px) and (max-width: 1199px) {
+  html {
+    font-size: 85%;
+  }
+}

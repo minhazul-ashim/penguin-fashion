@@ -1,0 +1,23 @@
+section {
+
+    margin: 5% 0;
+}
+
+body {
+
+    font-family:'Poppins', sans-serif
+}
+
+.section-title::after {
+
+   
+    content: '';
+    width: 20%;
+    background: $primaryText;
+    height: 5px;
+    display: block;
+    position: absolute;
+    left: 40%;
+    margin-top: 5px;
+    border-radius: 20px;
+}
